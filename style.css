@@ -118,11 +118,11 @@ nav ul a svg {
 
 /* ----- Hero Background ----- */
 
-.relative {
+header .relative {
     position: relative;
 }
 
-.bg-hero {
+header .relative .bg-hero {
     position: absolute;
     top: -4rem;
     left: 0rem;
