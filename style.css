@@ -70,6 +70,8 @@ button:hover {
     background-color: var(--royal-blue-hover);
 }
 
+/* ----- Header ----- */
+
 header {
     height: calc(100vh - var(--menu-height));
 
@@ -83,6 +85,7 @@ header {
     padding: 0 15rem;    
 }
 
+/* ----- Navbar ----- */
 nav {
     display: flex;
     align-items: center;
@@ -112,6 +115,32 @@ nav ul a:hover {
 nav ul a svg {
     display: none;
 }
+
+/* ----- Hero Background ----- */
+
+.relative {
+    position: relative;
+}
+
+.bg-hero {
+    position: absolute;
+    top: -4rem;
+    left: 0rem;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+
 
 
 /* ----- RESPONSIVITY ----- */
