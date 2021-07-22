@@ -19,7 +19,11 @@
 
 html, body {
     font-size: 10px;
+}
+
+body {
     background: var(--dark-grey);
+
 }
 
 body, button, input, select, textarea, a {
@@ -29,13 +33,15 @@ body, button, input, select, textarea, a {
 
 h1 {
     font-size: 4.4rem;
-    color: var(--royal-blue);
-    font-weight: 600;
+    color: var(--turquoise);
+    font-weight: 500;
+    padding: 2rem 0
 }
 
 h2 {
     font-size: 4.4rem;
     color: var(--turquoise);
+    margin-bottom: .8rem;
 }
 
 h3 {
@@ -79,10 +85,14 @@ header {
     align-items: center;
 }
 
-.container {
+header .container {
     width: 70%;
     height: fit-content;
     padding: 0 15rem;    
+}
+
+header .container p {
+    width: 80%;
 }
 
 /* ----- Navbar ----- */
@@ -93,8 +103,12 @@ nav {
 
     height: var(--menu-height);
     padding: 0 7rem;
+    top: 0;
+
+    z-index: 99;
 
     position: sticky;
+    background-color: var(--dark-grey);
 }
 nav img {
     height: 5rem;
@@ -117,15 +131,10 @@ nav ul a svg {
 }
 
 /* ----- Hero Background ----- */
-
-header .relative {
-    position: relative;
-}
-
-header .relative .bg-hero {
+header #bg-hero {
     position: absolute;
-    top: -4rem;
-    left: 0rem;
+    top: -2.5rem;
+    left: 0;
 
     width: 100%;
     height: 100vh;
@@ -136,26 +145,104 @@ header .relative .bg-hero {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
+
 }
 
+/* ----- ABOUT ME ----- */
+main .about-me {
+    display: flex;
+    align-items: center;
+    padding: 15rem 0;
+}
 
+main .about-me .container {
+    width: 50%;
+    padding: 0 0 0 15rem;
+}
+
+main .about-me .container p {
+    width: 93%;
+    padding-top: 1rem
+}
+
+main .about-me .image-container {
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+main .about-me .image-container img {
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .about-me .image-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+
+    border: 1px solid var(--royal-blue);
+}
+
+main .about-me .image-container .line.blue {
+    transform: rotate(-3.3deg);
+    border: 1px solid var(--turquoise);
+}
 
 
 
 /* ----- RESPONSIVITY ----- */
 /* Small Devices */
+@media (min-width: 1600px){
+    header .container {
+        padding: 0 15rem;
+    }
+
+    main .about-me {
+        padding: 15rem 10rem;
+    }
+
+    main .about-me .container p {
+        width: 80%;
+    }
+
+    main .about-me .image-container img {
+        width: 65%;
+    }
+}
+
 @media (max-width: 1000px) {
-    .container {
-        width: 85%;
+    header .container {
+        width: 100%;
+    }
+
+    main .about-me {
+        flex-direction: column;
+    }
+
+    main .about-me .container,
+    main .about-me .image-container {
+        width: 100%;
+    }
+
+    main .about-me .container {
+        padding: 0 5rem;
+    }
+
+    main .about-me .image-container {
+        margin: 10rem 0;
     }
 }
 
 /* Tablets and Ipads */
 @media (max-width: 768px) {
-    .container {
+    header .container {
         width: 100%;
-        padding: 0 8rem;
+        padding: 0 5rem;
     }
 
     nav {
@@ -171,6 +258,9 @@ header .relative .bg-hero {
         margin-left: 2.5rem;
     }
 
+    nav ul a:nth-child(1) {
+        margin: 2px;
+    }
 }
 
 /* Mobiles */
@@ -185,8 +275,14 @@ header .relative .bg-hero {
     }
 
     nav {
-        padding: 0 px;
+        position: fixed;
         width: 100%;
+        padding: 0;
+
+        justify-content: center;
+
+        bottom: 0;
+        top: unset;
     }
 
     nav img {
@@ -206,10 +302,13 @@ header .relative .bg-hero {
         padding-bottom: .5rem;
         display: block;
     }
+
+    main .about-me {
+        padding: 10rem 5rem;
+    }
     
+    main .about-me .container {
+        padding: 0;
+    }
 
 }
-
-
-
-
