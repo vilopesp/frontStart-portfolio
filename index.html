@@ -118,16 +118,16 @@
     <nav>
         <img src="/assets/logo.svg" alt="Logotipo">
         <ul>
-            <a href=""><i data-feather="user"></i> Sobre mim</a>
-            <a href=""><i data-feather="terminal"></i> Serviços</a>
-            <a href=""><i data-feather="code"></i> Portfolio</a>
-            <a href=""><i data-feather="file"></i> Curriculo</a>
-            <a href=""><i data-feather="mail"></i> Contato</a>
+            <a href="#aboutme"><i data-feather="user" ></i> Sobre mim</a>
+            <a href="#services"><i data-feather="terminal" ></i> Serviços</a>
+            <a href="#myworks"><i data-feather="code" ></i> Portfolio</a>
+            <a href="#curriculum"><i data-feather="file" ></i> Curriculo</a>
+            <a href="#contact"><i data-feather="mail"></i> Contato</a>
         </ul>
     </nav>
 
     <main>
-        <section class="about-me">
+        <section class="about-me" id="aboutme">
             <div class="container">
                 <h2>Sobre mim</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis ultrices dui, vitae placerat dolor condimentum eget. Vestibulum eu condimentum sem. In eu euismod velit. Donec libero nisi, sollicitudin nec blandit eu, tempus non nulla. Donec scelerisque est in nisi posuere, vel placerat ligula semper. 
@@ -139,10 +139,32 @@
                 <div class="line blue"></div>
                 <div class="line turquoise"></div>
                 <img src="/assets/profile.png" alt="Profile Image">
-
             </div>
+        </section>
 
+        <section class="services" id="services">
+            <h1 class="title-purple">Services</h1>
 
+            <div class="services-container">
+                <div class="service-card">
+                    <i data-feather="terminal" alt="Terminal Icon" id="service-svg"></i>
+                    <h3>Desenvolvimento de sites</h3>
+                    <p>Desenvolvimento de sites empresariais. Faça sua empresa ser facilmente encontrada online. </p>
+                </div>
+
+                <div class="service-card">
+                    <i data-feather="code" alt="Code Icon" id="service-svg"></i>
+                    <h3>Desenvolvimento de aplicações web</h3>
+                    <p>Desenvolvimento de aplicações web como sistemas de gerenciamento, feito sob medida.</p>
+                </div>
+
+                <div class="service-card">
+                    <i data-feather="figma" alt="Figma Icon" id="service-svg"></i>
+                    <h3>Criação de layouts</h3>
+                    <p>Criação de protótipos de interfaces web e mobile para validar sua ideia antes de por em prática.</p>
+                </div>
+
+            </div>  
         </section>
 
     </main>
