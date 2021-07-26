@@ -197,14 +197,14 @@ main .about-me .image-container .line.blue {
 
 .services {
     text-align: center;
-    margin: 12rem 0;
+    margin: 0 0 15rem ;
     padding: 0 6.5rem;
 
 }
 
 .services-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     max-width: 1200px;
     margin: 3.7rem auto 0;
@@ -299,7 +299,6 @@ main .about-me .image-container .line.blue {
 
     .service-card + .service-card {
         margin-top: 3rem
-
     }
 }
 
@@ -369,7 +368,7 @@ main .about-me .image-container .line.blue {
     }
 
     main .about-me {
-        padding: 10rem 5rem;
+        padding: 0rem 5rem;
     }
     
     main .about-me .container {
