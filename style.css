@@ -8,6 +8,8 @@
     --medium-grey: #A6A6A6;
     --dark-grey: #212226;
 
+    --bg-gradient: linear-gradient(75deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0) 100%);
+    
     --menu-height: 7.5rem;
 }
 
@@ -198,11 +200,11 @@ main .about-me .image-container .line.blue {
 .services {
     text-align: center;
     margin: 0 0 15rem ;
-    padding: 0 6.5rem;
+    padding: 0 11.5rem;
 
 }
 
-.services-container {
+.services-container, .portfolio-container {
     display: flex;
     justify-content: space-evenly;
 
@@ -229,7 +231,7 @@ main .about-me .image-container .line.blue {
 }
 
 .service-card + .service-card {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .services .services-container .service-card h3 {
@@ -248,6 +250,70 @@ main .about-me .image-container .line.blue {
 
     margin: 0 0 2rem;
 }
+
+/* --- portfolio --- */
+
+.portfolio {
+    padding: 0 15rem 15rem;
+    background: url(/assets/blur.svg);
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.portfolio .portfolio-container .portfolio-card {
+    background: var(--bg-gradient);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+
+    justify-content: space-evenly;
+    margin: 3.7rem auto 0;
+    padding: 2rem 3rem;
+    max-width: 320px;
+    
+}
+
+.portfolio-card + .portfolio-card {
+    margin-left: 20rem;
+}
+
+.portfolio .portfolio-card h5 {
+    font-size: 1.6rem;
+}
+
+.portfolio .portfolio-card p {
+    font-size: 1.6rem;
+}
+
+.portfolio-card .img-container img {
+    max-width: 100%;
+    padding: 1rem 0;
+}
+
+.portfolio-card .languages-list ul {
+    display: flex;
+    padding-bottom: 1rem;
+
+    font-size: 1.2rem;
+    color: var(--turquoise);
+
+    list-style: none;
+}
+
+.languages-list ul li {
+    border: 1px solid var(--turquoise);
+    border-radius: 1.5rem;
+    padding: .2rem 1.5rem;
+}
+
+.languages-list ul li + li {
+    margin-left: 1rem 
+}
+
+
 
 
 /* ----- RESPONSIVITY ----- */
