@@ -9,10 +9,6 @@ O projeto possuí alguns detalhes e elementos que eu reaproveitei o conhecimento
 </p>
 
 ![Homepage do portfólio](https://i.imgur.com/QC67nse.png)
-  
-## :memo: Licença
-
-<p> Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes. </p>
 
 ## :raising_hand: Autora
 
