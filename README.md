@@ -5,7 +5,7 @@
 ## :computer: Projeto
 <p> Projeto desenvolvido para fins educativos feito junto do curso introdutório de front-end: FrontStart da Isadora Stangarlin. 
 
-O projeto possuí alguns detalhes e elementos que eu reaproveitei o conhecimento de outros cursos e workshops semanais que realizei, como o FrontPush realizado pelo Násser Yousef Ali.
+O projeto possuí alguns detalhes e elementos que eu reaproveitei o conhecimento de outros cursos e workshops semanais que realizei, como o FrontPush realizado pelo Násser Yousef Ali. As imagens encontradas nele são meramente ilusrativas e não me representam.
 </p>
 
 ![Homepage do portfólio](https://i.imgur.com/QC67nse.png)
